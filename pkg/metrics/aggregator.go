@@ -207,7 +207,7 @@ func (a *AdoptionMetricsAggregator) GetClusterRoleMetric() prometheus.Gauge {
 	return a.clusterAdmin
 }
 
-func (a *AdoptionMetricsAggregator) GetLimitedsupportStatus() prometheus.GaugeVec {
+func (a *AdoptionMetricsAggregator) GetLimitedsupportStatus() *prometheus.GaugeVec {
 	return a.limitedSupport
 }
 
