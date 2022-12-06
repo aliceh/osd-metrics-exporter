@@ -39,7 +39,7 @@ type providerKey struct {
 type AdoptionMetricsAggregator struct {
 	identityProviders    *prometheus.GaugeVec
 	clusterAdmin         prometheus.Gauge
-	limitedSupport       prometheus.GaugeVec
+	limitedSupport       *prometheus.GaugeVec
 	providerMap          map[providerKey][]configv1.IdentityProviderType
 	clusterProxy         *prometheus.GaugeVec
 	clusterProxyCAExpiry *prometheus.GaugeVec
